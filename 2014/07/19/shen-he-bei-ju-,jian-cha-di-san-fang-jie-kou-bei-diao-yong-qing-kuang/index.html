@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>审核被拒，检查第三方接口被调用情况 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="收到苹果的拒绝： 
+123456789101112131415161718192021Reasons Program License Agreement PLA 3.3.12We found your app uses the iOS Advertising Identifier but does not include ad functionality. This does not comply">
+<meta property="og:type" content="article">
+<meta property="og:title" content="审核被拒，检查第三方接口被调用情况">
+<meta property="og:url" content="http://yoursite.com/2014/07/19/shen-he-bei-ju-,jian-cha-di-san-fang-jie-kou-bei-diao-yong-qing-kuang/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="收到苹果的拒绝： 
+123456789101112131415161718192021Reasons Program License Agreement PLA 3.3.12We found your app uses the iOS Advertising Identifier but does not include ad functionality. This does not comply">
+<meta property="og:updated_time" content="2014-07-21T02:00:41.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="审核被拒，检查第三方接口被调用情况">
+<meta name="twitter:description" content="收到苹果的拒绝： 
+123456789101112131415161718192021Reasons Program License Agreement PLA 3.3.12We found your app uses the iOS Advertising Identifier but does not include ad functionality. This does not comply">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-shen-he-bei-ju-,jian-cha-di-san-fang-jie-kou-bei-diao-yong-qing-kuang" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/07/19/shen-he-bei-ju-,jian-cha-di-san-fang-jie-kou-bei-diao-yong-qing-kuang/" class="article-date">
+  <time datetime="2014-07-19T02:44:22.000Z" itemprop="datePublished">2014-07-19</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/iOS/">iOS</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      审核被拒，检查第三方接口被调用情况
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>收到苹果的拒绝： </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">Reasons Program License Agreement PLA 3.3.12</span><br><span class="line"></span><br><span class="line">We found your app uses the iOS Advertising Identifier but does not include ad functionality. This does not comply with the terms of the iOS Developer Program License Agreement, as required by the App Store Review Guidelines.</span><br><span class="line"></span><br><span class="line">Specifically, section 3.3.12 of the iOS Developer Program License Agreement states:</span><br><span class="line"></span><br><span class="line">&quot;You and Your Applications (and any third party with whom you have contracted to serve advertising) may use the Advertising Identifier, and any information obtained through the use of the Advertising Identifier, only for the purpose of serving advertising. If a user resets the Advertising Identifier, then You agree not to combine, correlate, link or otherwise associate, either directly or indirectly, the prior Advertising Identifier and any derived information with the reset Advertising Identifier.&quot;</span><br><span class="line"></span><br><span class="line">Please check your code - including any third-party libraries - to remove any instances of:</span><br><span class="line"></span><br><span class="line">class: ASIdentifierManager</span><br><span class="line">selector: advertisingIdentifier</span><br><span class="line">framework: AdSupport.framework</span><br><span class="line"></span><br><span class="line">If you are planning to incorporate ads in a future version, please remove the Advertising Identifier from your app until you have included ad functionality.</span><br><span class="line"></span><br><span class="line">To help locate the Advertising Identifier, use the “nm” tool. For information on the “nm” tool, open a terminal window and enter, “man nm.”</span><br><span class="line"></span><br><span class="line">If you do not have access to the libraries source, you may be able to search the compiled binary using the &quot;strings&quot; or &quot;otool&quot; command line tools. The &quot;strings&quot; tool lists the methods that the library calls, and &quot;otool -ov&quot; will list the Objective-C class structures and their defined methods. These techniques can help you narrow down where the problematic code resides.</span><br><span class="line"></span><br><span class="line">The third party libraries I&apos;m using is the latest version of parse.com sdk, latest version of flurry analytics, and version 2.2 of test flight. Does anybody know which library is the issue?</span><br></pre></td></tr></table></figure>
+<p>因为使用了IDFA，但没苹果审核时没有看到广告。<br>我自己没有使用，但第三方类库就难说了，怎么检查呢？<br>查了一下stackoverflow，找到了方法：</p>
+<p>在终端执行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep -r advertisingIdentifier . (最后这个点，非常关键)</span><br></pre></td></tr></table></figure>
+<p>还有一个指令也非常有用，可以查看包内的接口调用情况</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">strings YoumiSDK_5.1.3/libYouMi.a</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2014/07/19/shen-he-bei-ju-,jian-cha-di-san-fang-jie-kou-bei-diao-yong-qing-kuang/" data-id="cilt1bu4j00051vuvh88ruqxy" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2014/10/29/ioskai-fa-zhong-de-xiao-po-shi/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          iOS开发中的小破事
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/06/23/ios4-ios7ping-mu-xuan-zhuan-de-kong-zhi/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">iOS4-iOS7屏幕旋转的控制</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/iOS/">iOS</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">November 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">October 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">July 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">June 2014</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2014/11/12/sheng-ji-yosemite-xcode6-hou-,cocoapodswen-ti/">升级Yosemite + Xcode6 后，cocoapods问题</a>
+          </li>
+        
+          <li>
+            <a href="/2014/10/29/ioskai-fa-zhong-de-xiao-po-shi/">iOS开发中的小破事</a>
+          </li>
+        
+          <li>
+            <a href="/2014/07/19/shen-he-bei-ju-,jian-cha-di-san-fang-jie-kou-bei-diao-yong-qing-kuang/">审核被拒，检查第三方接口被调用情况</a>
+          </li>
+        
+          <li>
+            <a href="/2014/06/23/ios4-ios7ping-mu-xuan-zhuan-de-kong-zhi/">iOS4-iOS7屏幕旋转的控制</a>
+          </li>
+        
+          <li>
+            <a href="/2014/06/17/ioskai-fa-zhong-de-yan-se-wen-ti/">iOS开发中的颜色问题</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

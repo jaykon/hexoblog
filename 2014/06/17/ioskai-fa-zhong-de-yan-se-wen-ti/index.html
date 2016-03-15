@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>iOS开发中的颜色问题 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="我们通常拿到设计稿开始实现时，会在设计稿做标注，比如颜色，字号，间距等。之前发现一个问题，我在程序里实现的颜色和设计稿的不太一样。过程通常是这样的，在photoshop、markman或者mac系统自带的取色工具取到一个RGB颜色，默认制式是Adobe RGB，然后在xcode的调色板实现，或者代码
+[UIColor colorWithRed:15/255.0f green:120/255.0f">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iOS开发中的颜色问题">
+<meta property="og:url" content="http://yoursite.com/2014/06/17/ioskai-fa-zhong-de-yan-se-wen-ti/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="我们通常拿到设计稿开始实现时，会在设计稿做标注，比如颜色，字号，间距等。之前发现一个问题，我在程序里实现的颜色和设计稿的不太一样。过程通常是这样的，在photoshop、markman或者mac系统自带的取色工具取到一个RGB颜色，默认制式是Adobe RGB，然后在xcode的调色板实现，或者代码
+[UIColor colorWithRed:15/255.0f green:120/255.0f">
+<meta property="og:image" content="http://yoursite.com/upload/color_diff.png">
+<meta property="og:image" content="http://yoursite.com/upload/color_choice.png">
+<meta property="og:updated_time" content="2014-06-18T02:11:36.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="iOS开发中的颜色问题">
+<meta name="twitter:description" content="我们通常拿到设计稿开始实现时，会在设计稿做标注，比如颜色，字号，间距等。之前发现一个问题，我在程序里实现的颜色和设计稿的不太一样。过程通常是这样的，在photoshop、markman或者mac系统自带的取色工具取到一个RGB颜色，默认制式是Adobe RGB，然后在xcode的调色板实现，或者代码
+[UIColor colorWithRed:15/255.0f green:120/255.0f">
+<meta name="twitter:image" content="http://yoursite.com/upload/color_diff.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-ioskai-fa-zhong-de-yan-se-wen-ti" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/06/17/ioskai-fa-zhong-de-yan-se-wen-ti/" class="article-date">
+  <time datetime="2014-06-17T12:34:36.000Z" itemprop="datePublished">2014-06-17</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/iOS/">iOS</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      iOS开发中的颜色问题
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>我们通常拿到设计稿开始实现时，会在设计稿做标注，比如颜色，字号，间距等。之前发现一个问题，我在程序里实现的颜色和设计稿的不太一样。过程通常是这样的，在photoshop、markman或者mac系统自带的取色工具取到一个RGB颜色，默认制式是Adobe RGB，然后在xcode的调色板实现，或者代码</p>
+<pre><code>[UIColor colorWithRed:15/255.0f green:120/255.0f blue:164/255.0f alpha:1]
+</code></pre><p>咋一看好像没什么问题，但只要和设计稿对比起来，其实是有差别的，这里有一个坑，xcode调色板的颜色，和预览的颜色，到模拟器，再到真机，颜色都不太一样。到最后我们在真机截图，发回电脑，和设计稿对比色值，果然不一样。</p>
+<p><img src="/upload/color_diff.png" alt="多种颜色不同"></p>
+<p>这时候就有点蒙了，不知道程序上怎么实现才能和设计稿一样的颜色，特别在UI Builder的颜色制式有n种</p>
+<p><img src="/upload/color_choice.png" alt="多种颜色选择"></p>
+<p>最后发现，无论选哪种颜色制式，都是对不上photoshop的颜色的，最后找到解决方法如下：</p>
+<p>用mac自带的取色工具，选中“以sRGB显示”来取设计稿的的颜色，然后这个颜色值用代码实现即可，如果用XIB,颜色制式选”Generic RBG“即可。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2014/06/17/ioskai-fa-zhong-de-yan-se-wen-ti/" data-id="cilt1bu3z00001vuvhv50e7f4" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2014/06/23/ios4-ios7ping-mu-xuan-zhuan-de-kong-zhi/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          iOS4-iOS7屏幕旋转的控制
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/06/11/vim/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">MACVIM 上手笔记</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/iOS/">iOS</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">November 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">October 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">July 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">June 2014</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2014/11/12/sheng-ji-yosemite-xcode6-hou-,cocoapodswen-ti/">升级Yosemite + Xcode6 后，cocoapods问题</a>
+          </li>
+        
+          <li>
+            <a href="/2014/10/29/ioskai-fa-zhong-de-xiao-po-shi/">iOS开发中的小破事</a>
+          </li>
+        
+          <li>
+            <a href="/2014/07/19/shen-he-bei-ju-,jian-cha-di-san-fang-jie-kou-bei-diao-yong-qing-kuang/">审核被拒，检查第三方接口被调用情况</a>
+          </li>
+        
+          <li>
+            <a href="/2014/06/23/ios4-ios7ping-mu-xuan-zhuan-de-kong-zhi/">iOS4-iOS7屏幕旋转的控制</a>
+          </li>
+        
+          <li>
+            <a href="/2014/06/17/ioskai-fa-zhong-de-yan-se-wen-ti/">iOS开发中的颜色问题</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

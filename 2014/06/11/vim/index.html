@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>MACVIM 上手笔记 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="重新配置时，顺手重新整理一下这篇文章
+##一、安装、配置
+先下载它吧https://github.com/b4winckler/macvim/releases
+安装完毕后，运行，发现不对，传说中的透明背景呢？别急，这里先配置一下：
+Edit-&amp;gt;StartUp Settig
+&amp;quot;不兼容vi模式
+set nocompatible
+&amp;quot;显示行号
+set number
+&amp;quot;语">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MACVIM 上手笔记">
+<meta property="og:url" content="http://yoursite.com/2014/06/11/vim/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="重新配置时，顺手重新整理一下这篇文章
+##一、安装、配置
+先下载它吧https://github.com/b4winckler/macvim/releases
+安装完毕后，运行，发现不对，传说中的透明背景呢？别急，这里先配置一下：
+Edit-&amp;gt;StartUp Settig
+&amp;quot;不兼容vi模式
+set nocompatible
+&amp;quot;显示行号
+set number
+&amp;quot;语">
+<meta property="og:updated_time" content="2014-06-18T02:04:56.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MACVIM 上手笔记">
+<meta name="twitter:description" content="重新配置时，顺手重新整理一下这篇文章
+##一、安装、配置
+先下载它吧https://github.com/b4winckler/macvim/releases
+安装完毕后，运行，发现不对，传说中的透明背景呢？别急，这里先配置一下：
+Edit-&amp;gt;StartUp Settig
+&amp;quot;不兼容vi模式
+set nocompatible
+&amp;quot;显示行号
+set number
+&amp;quot;语">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-vim" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/06/11/vim/" class="article-date">
+  <time datetime="2014-06-11T03:16:21.000Z" itemprop="datePublished">2014-06-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      MACVIM 上手笔记
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>重新配置时，顺手重新整理一下这篇文章</p>
+<p>##一、安装、配置</p>
+<p>先下载它吧<br><a href="https://github.com/b4winckler/macvim/releases" target="_blank" rel="external">https://github.com/b4winckler/macvim/releases</a></p>
+<p>安装完毕后，运行，发现不对，传说中的透明背景呢？别急，这里先配置一下：</p>
+<p>Edit-&gt;StartUp Settig</p>
+<pre><code>&quot;不兼容vi模式
+set nocompatible
+&quot;显示行号
+set number
+&quot;语法高亮
+syntax on
+&quot;按照C语法自动缩进
+set cindent
+&quot;设置缩进长度
+&quot;详见http://dddspace.com/2010/03/vim-indentation-and-space-config.html
+set tabstop=8
+set shiftwidth=8
+set softtabstop=8
+set noexpandtab
+&quot;显示括号对应
+set showmatch
+&quot;实时显示搜索结果
+set incsearch
+&quot;编码设置
+set encoding=utf-8
+set fileencodings=gb2312,ucs-bom,utf-8,utf-16,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+&quot;字体设置
+set guifont=Arial_monospaced_for_SAP:h16
+&quot;设置颜色主题
+colorscheme torte
+&quot;设置透明度
+set transparency=20
+</code></pre><p>保存重启即可。</p>
+<p>##二：插件</p>
+<p>装其它插件前，强列建义先安装pathogen.vim，它将大大减轻你管理和安装插件的复杂度。</p>
+<p>pathogen.vimi<br><a href="https://github.com/tpope/vim-pathogen" target="_blank" rel="external">https://github.com/tpope/vim-pathogen</a></p>
+<pre><code>mkdir -p ~/.vim/autoload ~/.vim/bundle &amp;&amp; \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+</code></pre><p>word_complete.vim  <a href="http://www.vim.org/scripts/script.php?script_id=73" target="_blank" rel="external">http://www.vim.org/scripts/script.php?script_id=73</a></p>
+<p>一个自动补全的插件，它是跟据上下文进行的补全的，挺好用的</p>
+<p>ZenCoding.vim  <a href="http://www.vim.org/scripts/script.php?script_id=2981" target="_blank" rel="external">http://www.vim.org/scripts/script.php?script_id=2981</a></p>
+<p>有写HTML的对应个应该很清楚</p>
+<p>The NERD tree<br><a href="http://www.vim.org/scripts/script.php?script_id=1658" target="_blank" rel="external">http://www.vim.org/scripts/script.php?script_id=1658</a></p>
+<p>目录浏览，安装后默认不调用，可以配置快捷将其调用与隐藏<br>let mapleader = “,”<br>nmap n :NERDTreeToggle<br>这样，&lt;,+n&gt;即可调用</p>
+<p>The NERD Commenter<br><a href="http://www.vim.org/scripts/script.php?script_id=1218）" target="_blank" rel="external">http://www.vim.org/scripts/script.php?script_id=1218）</a></p>
+<p>在normal模式下进行快速注释，我常用到就下面几个：</p>
+<p>&lt;,+cc&gt;注释当前行，或所选行，</p>
+<p>&lt;,+space&gt;切换注释和不注释</p>
+<p>&lt;,+cs&gt;多行注释</p>
+<p>前面可以加数字来指定注释行数</p>
+<p>syntastic<br><a href="https://github.com/scrooloose/syntastic" target="_blank" rel="external">https://github.com/scrooloose/syntastic</a></p>
+<p>代码语法检查的接口，下载好后还是一样，放到buddle文件夹自动加载。</p>
+<p>然后配置vimrc</p>
+<pre><code>&quot;&quot;syntax
+&quot;&quot; Set symbol characters
+let g:syntastic_error_symbol=&apos;✗&apos;
+let g:syntastic_warning_symbol=&apos;⚠&apos;
+&quot;在打开文件的时候检查
+let g:syntastic_check_on_open=1
+&quot;&quot; Open and close error list console automatically
+&quot;let g:syntastic_auto_loc_list=1
+</code></pre><p>由于各个语言是要分别配置的，所以比较麻烦。</p>
+<p>###php:</p>
+<p>php比较方便，打开syntax_checkers/php.vim</p>
+<p>找到display_errors=0改为display_errors=1</p>
+<p>配置vimrc：</p>
+<pre><code>et g:syntastic_phpcs_conf = &quot;--tab-width=4 --standard=CodeIgniter&quot;
+let g:syntastic_stl_format = &apos;[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]&apos;
+</code></pre><p>这样就OK了，每次打开或保存时都会检查语法。</p>
+<p>###javascript:</p>
+<p>这个有点麻烦，要用到jshint</p>
+<p>首先要安装npm，一个nodejs模块打包安装命令。</p>
+<p><a href="http://nodejs.org/download/" target="_blank" rel="external">http://nodejs.org/download/</a></p>
+<p>安装完毕之后，在终端执行下面指令，安装jshint：</p>
+<pre><code>sudo npm install jshint -g
+</code></pre><p>输入密码，回车</p>
+<p>等它安装完后，输入终端jshint,有响应即代表安装成功。</p>
+<p>然后配置vimrc：</p>
+<pre><code>&quot;&quot; Choose a Javascript syntax checker
+let g:syntastic_javascript_syntax_checker=&quot;jshint&quot;
+let g:syntastic_javascript_jshint_conf=&quot;~/jshintrc.json&quot;
+</code></pre><p>可以看到上面有个路径”~/jshintrc.json”，它用来配置检查器的风格，这是jshint和jslint最大的区别。</p>
+<p>新建一个json文件，/用户/[yourname]/jshintrc.json，内容如下：</p>
+<p>{curly:true}</p>
+<p>意思为在if/for等block必须使用{}，否则报错，更多配置请移步</p>
+<p><a href="http://jshint.org/docs/" target="_blank" rel="external">http://jshint.org/docs/</a></p>
+<p>##三、技巧</p>
+<p>###1）转编码：<br>在Vim中直接进行转换文件编码,比如将一个文件转换成utf-8格式</p>
+<p>   :set fileencoding=utf-8</p>
+<p>enconv 转换文件编码，比如要将一个GBK编码的文件转换成UTF-8编码，操作如下</p>
+<p>enconv -L zh_CN -x UTF-8 filename（这个命令对windows的ANSI编码非常有效）。</p>
+<p>iconv 转换，iconv的命令格式如下：</p>
+<p>iconv -f encoding -t encoding inputfile</p>
+<p>比如将一个UTF-8 编码的文件转换成GBK编码</p>
+<p>iconv -f GBK -t UTF-8 file1 -o file2</p>
+<p>###2）查找替换</p>
+<pre><code>:%s/foo/bar/g
+Find each occurrence of ‘foo’ (in all lines), and replace it with ‘bar’.
+:s/foo/bar/g
+Find each occurrence of ‘foo’ (in the current line only), and replace it with ‘bar’.
+:%s/foo/bar/gc
+Change each ‘foo’ to ‘bar’, but ask for confirmation first.
+:%s/\&lt;foo\&gt;/bar/gc
+Change only whole words exactly matching ‘foo’ to ‘bar’; ask for confirmation.
+:%s/foo/bar/gci
+Change each ‘foo’ (case insensitive) to ‘bar’; ask for confirmation.
+This may be wanted after using :set noignorecase to make searches case sensitive (the default).
+:%s/foo/bar/gcI
+Change each ‘foo’ (case sensitive) to ‘bar’; ask for confirmation.
+This may be wanted after using :set ignorecase to make searches case insensitive.
+</code></pre><p>##四、问题</p>
+<p>###中文输入法：<br>我用的是QQ五笔，但在编辑模式中输入中文时，常常会触发MacVim的命令，原因是输是输入法没有完全截获按键；<br>解决方法:在命令行输入以下命令</p>
+<pre><code>defaults write org.vim.MacVim MMUseInlineIm 0
+</code></pre><p>##五、在终端启动</p>
+<p>下载后有一个mvim文件，将其拷贝到<br>    $sudo cp -f mvim /usr/bin/</p>
+<p>这里在终端通过mvim指令即可运行或编辑文件，编辑文件每次都是新建窗口，让他支持tab可以编辑这个mvim文件，首行加上<br>Shell</p>
+<pre><code>tabs=true
+</code></pre><p>然后最后一个if 块替换成</p>
+<pre><code># Last step:  fire up vim.
+if [ &quot;$gui&quot; ]; then
+  if $tabs &amp;&amp; [[ `$binary --serverlist` = &quot;VIM&quot; ]]; then
+    exec &quot;$binary&quot; -g $opts --remote-tab-silent ${1:+&quot;$@&quot;}
+  else
+    exec &quot;$binary&quot; -g $opts ${1:+&quot;$@&quot;}
+  fi
+else
+  exec &quot;$binary&quot; $opts ${1:+&quot;$@&quot;}
+fi
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2014/06/11/vim/" data-id="cilt1bu4800011vuvws2n3qbp" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2014/06/17/ioskai-fa-zhong-de-yan-se-wen-ti/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          iOS开发中的颜色问题
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/iOS/">iOS</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">November 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">October 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">July 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">June 2014</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2014/11/12/sheng-ji-yosemite-xcode6-hou-,cocoapodswen-ti/">升级Yosemite + Xcode6 后，cocoapods问题</a>
+          </li>
+        
+          <li>
+            <a href="/2014/10/29/ioskai-fa-zhong-de-xiao-po-shi/">iOS开发中的小破事</a>
+          </li>
+        
+          <li>
+            <a href="/2014/07/19/shen-he-bei-ju-,jian-cha-di-san-fang-jie-kou-bei-diao-yong-qing-kuang/">审核被拒，检查第三方接口被调用情况</a>
+          </li>
+        
+          <li>
+            <a href="/2014/06/23/ios4-ios7ping-mu-xuan-zhuan-de-kong-zhi/">iOS4-iOS7屏幕旋转的控制</a>
+          </li>
+        
+          <li>
+            <a href="/2014/06/17/ioskai-fa-zhong-de-yan-se-wen-ti/">iOS开发中的颜色问题</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
