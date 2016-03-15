@@ -6,18 +6,18 @@
   <title>Git的日常 | jaykon的副业是写代码</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="第一步当然把代码Clone下来进进行管理1git clone git@192.168.1.1:xxx.git
-切换分支，修改文件，提交代码clone下来之后，默认在master分支，但我们一般不会直接在master分支进行开发，所以我们从master克隆并新建一个dev分支作为开发分支12345678//新建dev分支git checkout -b dev//当这个分支需要推送到服务器时，须执行如">
+习惯性动作1234567891011121314151617181920212223242526272829303132//当面代码有哪些文件修改了git status//当前所在分支git branch//更新代码git pull//查看提交记录git log//将新增的文件加入版本管理">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git的日常">
 <meta property="og:url" content="http://blog.jcoder.org/2016/03/15/Git的日常/index.html">
 <meta property="og:site_name" content="jaykon的副业是写代码">
 <meta property="og:description" content="第一步当然把代码Clone下来进进行管理1git clone git@192.168.1.1:xxx.git
-切换分支，修改文件，提交代码clone下来之后，默认在master分支，但我们一般不会直接在master分支进行开发，所以我们从master克隆并新建一个dev分支作为开发分支12345678//新建dev分支git checkout -b dev//当这个分支需要推送到服务器时，须执行如">
-<meta property="og:updated_time" content="2016-03-15T08:53:10.000Z">
+习惯性动作1234567891011121314151617181920212223242526272829303132//当面代码有哪些文件修改了git status//当前所在分支git branch//更新代码git pull//查看提交记录git log//将新增的文件加入版本管理">
+<meta property="og:updated_time" content="2016-03-15T09:09:29.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git的日常">
 <meta name="twitter:description" content="第一步当然把代码Clone下来进进行管理1git clone git@192.168.1.1:xxx.git
-切换分支，修改文件，提交代码clone下来之后，默认在master分支，但我们一般不会直接在master分支进行开发，所以我们从master克隆并新建一个dev分支作为开发分支12345678//新建dev分支git checkout -b dev//当这个分支需要推送到服务器时，须执行如">
+习惯性动作1234567891011121314151617181920212223242526272829303132//当面代码有哪些文件修改了git status//当前所在分支git branch//更新代码git pull//查看提交记录git log//将新增的文件加入版本管理">
   
     <link rel="alternate" href="/atom.xml" title="jaykon的副业是写代码" type="application/atom+xml">
   
@@ -59,9 +59,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://blog.jcoder.org"></form>
@@ -93,17 +93,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="第一步当然把代码Clone下来进进行管理"><a href="#第一步当然把代码Clone下来进进行管理" class="headerlink" title="第一步当然把代码Clone下来进进行管理"></a>第一步当然把代码Clone下来进进行管理</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@192.168.1.1:xxx.git</span><br></pre></td></tr></table></figure>
-<h2 id="切换分支，修改文件，提交代码"><a href="#切换分支，修改文件，提交代码" class="headerlink" title="切换分支，修改文件，提交代码"></a>切换分支，修改文件，提交代码</h2><p>clone下来之后，默认在master分支，但我们一般不会直接在master分支进行开发，所以我们从master克隆并新建一个dev分支作为开发分支<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//新建dev分支</span><br><span class="line">git checkout -b dev</span><br><span class="line"></span><br><span class="line">//当这个分支需要推送到服务器时，须执行如下指令</span><br><span class="line">git push --set-upstream origin dev</span><br><span class="line"></span><br><span class="line">//此时，当前已经在dev分支，习惯性地更新一下这个分支的内容</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure></p>
-<p>现在我们随便修改一下代码，然后将代码提交到服务器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//这时只是把代码提交到本地，git的版本管理不联网也可以进行</span><br><span class="line">//-m是提交备注，每次都可以用一句话描述你的commit是一个好习惯，</span><br><span class="line">git commit -a -m&quot;我随意改一下，别生气&quot; </span><br><span class="line"></span><br><span class="line">//此时修改的代码已经推送到服务器</span><br><span class="line">git push</span><br></pre></td></tr></table></figure></p>
-<h2 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h2><p>现在把刚刚修改的文件合并到主分支去<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//切换到主分支</span><br><span class="line">git checkout master </span><br><span class="line"></span><br><span class="line">//将dev合并到当前（master）分支 </span><br><span class="line">git merge dev</span><br></pre></td></tr></table></figure></p>
-<h2 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h2><p>删除本地分支<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -D dev</span><br></pre></td></tr></table></figure></p>
-<p>删除远程分支<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin --delete dev</span><br></pre></td></tr></table></figure></p>
-<h2 id="查看分支"><a href="#查看分支" class="headerlink" title="查看分支"></a>查看分支</h2><p>查看本地分支<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch</span><br></pre></td></tr></table></figure></p>
-<p>查看本地和远程分支<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -a</span><br></pre></td></tr></table></figure></p>
+<h2 id="习惯性动作"><a href="#习惯性动作" class="headerlink" title="习惯性动作"></a>习惯性动作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">//当面代码有哪些文件修改了</span><br><span class="line">git status</span><br><span class="line"></span><br><span class="line">//当前所在分支</span><br><span class="line">git branch</span><br><span class="line"></span><br><span class="line">//更新代码</span><br><span class="line">git pull</span><br><span class="line"></span><br><span class="line">//查看提交记录</span><br><span class="line">git log</span><br><span class="line"></span><br><span class="line">//将新增的文件加入版本管理</span><br><span class="line">git add .       //全部加入</span><br><span class="line">git add [file]  //单个加入</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//提交代码：建议每完成一件事都提交代码，注释很重要</span><br><span class="line">git commit -a -m&quot;我随意改一下，别生气&quot;</span><br><span class="line"></span><br><span class="line">//将代码推到服务端</span><br><span class="line">git push </span><br><span class="line"></span><br><span class="line">//从当前分支新建分支</span><br><span class="line">git checkout -b dev</span><br><span class="line">git push --set-upstream origin dev //当这个分支需要推送到服务器时，须执行如下指令</span><br><span class="line"></span><br><span class="line">//切换分支</span><br><span class="line">git checkout dev</span><br><span class="line"></span><br><span class="line">//将dev合并到当前分支 </span><br><span class="line">git merge dev</span><br></pre></td></tr></table></figure>
+<h2 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//删除本地分支</span><br><span class="line">git branch -D dev</span><br><span class="line"></span><br><span class="line">//删除远程分支</span><br><span class="line">git push origin --delete dev</span><br></pre></td></tr></table></figure>
+<h2 id="查看本地和远程分支"><a href="#查看本地和远程分支" class="headerlink" title="查看本地和远程分支"></a>查看本地和远程分支</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -a</span><br></pre></td></tr></table></figure>
 <h2 id="Tag"><a href="#Tag" class="headerlink" title="Tag"></a>Tag</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//新增tag</span><br><span class="line">git tag v2.2.0</span><br><span class="line"></span><br><span class="line">//推送到服务器</span><br><span class="line">git push —-tags</span><br><span class="line"></span><br><span class="line">//删除tag</span><br><span class="line">git tag -d v1.0.0</span><br><span class="line"></span><br><span class="line">//从服务器删除tag</span><br><span class="line">git push origin :refs/tags/v1.0.0</span><br></pre></td></tr></table></figure>
-<h2 id="恢复到某个版本"><a href="#恢复到某个版本" class="headerlink" title="恢复到某个版本"></a>恢复到某个版本</h2><p>首先，查看一下版本记录<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log  //每次提交都写注释的好处来了</span><br></pre></td></tr></table></figure></p>
-<p>挑一个版本号进行恢复<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset –-hard 9aa51d89799716aa68cff3f30c26f8815408e926</span><br></pre></td></tr></table></figure></p>
-<h2 id="单独文件恢复到某个版本"><a href="#单独文件恢复到某个版本" class="headerlink" title="单独文件恢复到某个版本"></a>单独文件恢复到某个版本</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git log -p /model/abc.xib  //查看文件修改记录</span><br><span class="line">git reset 9aa51d89799716aa68cff3f30c26f8815408e926 [文件路径]</span><br><span class="line">git checkout /model/abc.xib</span><br></pre></td></tr></table></figure>
+<h2 id="恢复到某个版本"><a href="#恢复到某个版本" class="headerlink" title="恢复到某个版本"></a>恢复到某个版本</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//首先，查看一下版本记录</span><br><span class="line">git log  //每次提交都写注释的好处来了</span><br><span class="line"></span><br><span class="line">//挑一个版本号进行恢复</span><br><span class="line">git reset –-hard 9aa51d89799716aa68cff3f30c26f8815408e926</span><br></pre></td></tr></table></figure>
+<h2 id="单独文件恢复到某个版本"><a href="#单独文件恢复到某个版本" class="headerlink" title="单独文件恢复到某个版本"></a>单独文件恢复到某个版本</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//查看文件修改记录</span><br><span class="line">git log -p /model/abc.xib  </span><br><span class="line"></span><br><span class="line">//恢复文件</span><br><span class="line">git reset 9aa51d89799716aa68cff3f30c26f8815408e926 [文件路径]</span><br><span class="line"></span><br><span class="line">//如查本地正在编辑且未commit这个文件，需要checkout一下</span><br><span class="line">git checkout /model/abc.xib</span><br></pre></td></tr></table></figure>
 <h2 id="直接在远程恢复到某个版本（一般很少用到）"><a href="#直接在远程恢复到某个版本（一般很少用到）" class="headerlink" title="直接在远程恢复到某个版本（一般很少用到）"></a>直接在远程恢复到某个版本（一般很少用到）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard &lt;commit-hash&gt;</span><br><span class="line">git push -f origin &lt;branch&gt;</span><br></pre></td></tr></table></figure>
 <h2 id="正在开发，须要去修改别的分支的BUG，但又不想提交当前代码"><a href="#正在开发，须要去修改别的分支的BUG，但又不想提交当前代码" class="headerlink" title="正在开发，须要去修改别的分支的BUG，但又不想提交当前代码"></a>正在开发，须要去修改别的分支的BUG，但又不想提交当前代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//现在代码变成最后提交的版本，刚刚正在编辑的代码已经暂存到缓存区</span><br><span class="line">git stash</span><br><span class="line"></span><br><span class="line">//切换到另一分支修改代码</span><br><span class="line">git checkout dev</span><br><span class="line">git commit -a -m&quot;修改紧急的BUG&quot;</span><br><span class="line">git push</span><br><span class="line"></span><br><span class="line">//回到原来的分支</span><br><span class="line">git checkout </span><br><span class="line"></span><br><span class="line">//恢复现场，可以继续开心地coding</span><br><span class="line">git stash pop</span><br></pre></td></tr></table></figure>
 <p>暂时只想到这么多了，有更好用的场景求指点</p>
@@ -112,7 +107,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.jcoder.org/2016/03/15/Git的日常/" data-id="cilt6hykv0007lwuvkkqr74h0" class="article-share-link">Partager</a>
+      <a data-url="http://blog.jcoder.org/2016/03/15/Git的日常/" data-id="cilt76s7u0008seuv9b9wgqit" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发/">开发</a></li></ul>
@@ -125,7 +120,7 @@
   
   
     <a href="/2014/11/12/sheng-ji-yosemite-xcode6-hou-,cocoapodswen-ti/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Ancien</strong>
+      <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">升级Yosemite + Xcode6 后，cocoapods问题</div>
     </a>
   
@@ -140,7 +135,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Catégories</h3>
+    <h3 class="widget-title">Categories</h3>
     <div class="widget">
       <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/iOS/">iOS</a></li></ul>
     </div>
@@ -150,7 +145,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Mot-clés</h3>
+    <h3 class="widget-title">Tags</h3>
     <div class="widget">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/开发/">开发</a></li></ul>
     </div>
@@ -160,7 +155,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Nuage de mot-clés</h3>
+    <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
       <a href="/tags/开发/" style="font-size: 10px;">开发</a>
     </div>
@@ -179,7 +174,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
@@ -216,7 +211,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2016 jaykon<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
