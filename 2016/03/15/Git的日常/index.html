@@ -5,19 +5,19 @@
   
   <title>Git的日常 | jaykon的副业是写代码</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="##第一步当然把代码Clone下来进进行管理1git clone git@192.168.1.1:xxx.git
-##切换分支，修改文件，提交代码clone下来之后，默认在master分支，但我们一般不会直接在master分支进行开发，所以我们从master克隆并新建一个dev分支作为开发分支12345678//新建dev分支git checkout -b dev//当这个分支需要推送到服务器时，">
+  <meta name="description" content="第一步当然把代码Clone下来进进行管理1git clone git@192.168.1.1:xxx.git
+##切换分支，修改文件，提交代码clone下来之后，默认在master分支，但我们一般不会直接在master分支进行开发，所以我们从master克隆并新建一个dev分支作为开发分支12345678//新建dev分支git checkout -b dev//当这个分支需要推送到服务器时，须执">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git的日常">
 <meta property="og:url" content="http://blog.jcoder.org/2016/03/15/Git的日常/index.html">
 <meta property="og:site_name" content="jaykon的副业是写代码">
-<meta property="og:description" content="##第一步当然把代码Clone下来进进行管理1git clone git@192.168.1.1:xxx.git
-##切换分支，修改文件，提交代码clone下来之后，默认在master分支，但我们一般不会直接在master分支进行开发，所以我们从master克隆并新建一个dev分支作为开发分支12345678//新建dev分支git checkout -b dev//当这个分支需要推送到服务器时，">
-<meta property="og:updated_time" content="2016-03-15T08:47:31.000Z">
+<meta property="og:description" content="第一步当然把代码Clone下来进进行管理1git clone git@192.168.1.1:xxx.git
+##切换分支，修改文件，提交代码clone下来之后，默认在master分支，但我们一般不会直接在master分支进行开发，所以我们从master克隆并新建一个dev分支作为开发分支12345678//新建dev分支git checkout -b dev//当这个分支需要推送到服务器时，须执">
+<meta property="og:updated_time" content="2016-03-15T08:49:43.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git的日常">
-<meta name="twitter:description" content="##第一步当然把代码Clone下来进进行管理1git clone git@192.168.1.1:xxx.git
-##切换分支，修改文件，提交代码clone下来之后，默认在master分支，但我们一般不会直接在master分支进行开发，所以我们从master克隆并新建一个dev分支作为开发分支12345678//新建dev分支git checkout -b dev//当这个分支需要推送到服务器时，">
+<meta name="twitter:description" content="第一步当然把代码Clone下来进进行管理1git clone git@192.168.1.1:xxx.git
+##切换分支，修改文件，提交代码clone下来之后，默认在master分支，但我们一般不会直接在master分支进行开发，所以我们从master克隆并新建一个dev分支作为开发分支12345678//新建dev分支git checkout -b dev//当这个分支需要推送到服务器时，须执">
   
     <link rel="alternate" href="/atom.xml" title="jaykon的副业是写代码" type="application/atom+xml">
   
@@ -61,7 +61,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://blog.jcoder.org"></form>
@@ -92,7 +92,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##第一步当然把代码Clone下来进进行管理<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@192.168.1.1:xxx.git</span><br></pre></td></tr></table></figure></p>
+        <h2 id="第一步当然把代码Clone下来进进行管理"><a href="#第一步当然把代码Clone下来进进行管理" class="headerlink" title="第一步当然把代码Clone下来进进行管理"></a>第一步当然把代码Clone下来进进行管理</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@192.168.1.1:xxx.git</span><br></pre></td></tr></table></figure>
 <p>##切换分支，修改文件，提交代码<br>clone下来之后，默认在master分支，但我们一般不会直接在master分支进行开发，所以我们从master克隆并新建一个dev分支作为开发分支<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//新建dev分支</span><br><span class="line">git checkout -b dev</span><br><span class="line"></span><br><span class="line">//当这个分支需要推送到服务器时，须执行如下指令</span><br><span class="line">git push --set-upstream origin dev</span><br><span class="line"></span><br><span class="line">//此时，当前已经在dev分支，习惯性地更新一下这个分支的内容</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure></p>
 <p>现在我们随便修改一下代码，然后将代码提交到服务器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//这时只是把代码提交到本地，git的版本管理不联网也可以进行</span><br><span class="line">//-m是提交备注，每次都可以用一句话描述你的commit是一个好习惯，</span><br><span class="line">git commit -a -m&quot;我随意改一下，别生气&quot; </span><br><span class="line"></span><br><span class="line">//此时修改的代码已经推送到服务器</span><br><span class="line">git push</span><br></pre></td></tr></table></figure></p>
 <p>##合并分支<br>现在把刚刚修改的文件合并到主分支去<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//切换到主分支</span><br><span class="line">git checkout master </span><br><span class="line"></span><br><span class="line">//将dev合并到当前（master）分支 </span><br><span class="line">git merge dev</span><br></pre></td></tr></table></figure></p>
@@ -112,7 +112,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.jcoder.org/2016/03/15/Git的日常/" data-id="cilt2nb550009nduvp8bpqz1l" class="article-share-link">Share</a>
+      <a data-url="http://blog.jcoder.org/2016/03/15/Git的日常/" data-id="cilt6hykv0007lwuvkkqr74h0" class="article-share-link">Delen</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开发/">开发</a></li></ul>
@@ -125,7 +125,7 @@
   
   
     <a href="/2014/11/12/sheng-ji-yosemite-xcode6-hou-,cocoapodswen-ti/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
+      <strong class="article-nav-caption">Ouder</strong>
       <div class="article-nav-title">升级Yosemite + Xcode6 后，cocoapods问题</div>
     </a>
   
@@ -140,7 +140,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
+    <h3 class="widget-title">Categorieën</h3>
     <div class="widget">
       <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/iOS/">iOS</a></li></ul>
     </div>
@@ -150,7 +150,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
+    <h3 class="widget-title">Labels</h3>
     <div class="widget">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/开发/">开发</a></li></ul>
     </div>
@@ -169,7 +169,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Archieven</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/11/">November 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/10/">October 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">July 2014</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06/">June 2014</a></li></ul>
     </div>
@@ -179,7 +179,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Recente berichten</h3>
     <div class="widget">
       <ul>
         
